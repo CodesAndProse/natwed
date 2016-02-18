@@ -57,6 +57,8 @@ $(document).ready(function(){
 				  $('#rsvp-result').html("<p><h3>"+label+"</h3> Max Number of attendees is: "+value+"</p>");
 				  $('#rsvp-result').data("family", label);
 				  $('#rsvp-result').data("guests", value);
+				  $('#rsvp-result').addClass("alert alert-success");
+				  $('#rsvp').show();
 				  return false;
 				}
             });

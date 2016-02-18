@@ -54,11 +54,13 @@
                 </div><!--//navbar-header-->
                 <div id="navbar-collapse" class="navbar-collapse collapse  text-center">
                     <ul class="nav navbar-nav center-block">
+					    
                         <li class="nav-item"><a class="scrollto" href="#wedding">The Wedding</a></li>
+						 <li class="nav-item"><a class="scrollto" href="#RSVPsearch">RSVP</a></li>
                         <li class="nav-item"><a class="scrollto" href="#story">Our Story</a></li>
                         <li class="nav-item"><a class="scrollto" href="#gallery">Gallery</a></li>                                              
                         <li class="nav-item"><a class="scrollto" href="#gift">Registries</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#RSVPsearch">RSVP</a></li>
+                       
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
             </nav><!--//main-nav-->
@@ -148,17 +150,16 @@
 						
             </h2>
             <div class="row cols-wrapper">
-                <div>
-				<label>Enter the name on your invitation to RSVP:</label>
-				<input id="name"/>
+                <div class="center-block well" style="max-width:50%">
+				<label for="name">Enter the name on your invitation to RSVP</label>
+				<input class="form-control" id="name"/>
 				</div>
-				<br>
 				<br>
 				<div id="rsvp-result"></div>
             </div><!--//row-->
             
             <div class="action-wrapper">
-                <a class="btn btn-primary" id="rsvp" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Now</a>
+                <a class="btn btn-primary"  style="display:none;" id="rsvp" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP</a>
             </div><!--//action-wrapper-->
             <br/>
         </div><!--//container-->
@@ -364,10 +365,11 @@ style="display:none;" onload="if(submitted)$('iframe').show();"><div><p>Worked</
 <div class="error-message" id="1275419724_errorMessage"></div>
 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
-<label class="ss-q-item-label" for="entry_1498135098"><div class="ss-q-title">How many people will attend?
+<label class="ss-q-item-label" for="entry_1498135098">
+<div id="guest_title" class="ss-q-title">How many people will attend?
 </div>
 <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-<input type="number" name="entry.1498135098" value="" class="ss-q-short" id="entry_1498135098" dir="auto" aria-label="How many people will attend?  " title="">
+<input type="number" name="entry.1498135098" max="1" value="" class="ss-q-short" id="entry_1498135098" dir="auto" aria-label="How many people will attend?  " title="">
 <div class="error-message" id="905896922_errorMessage"></div>
 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 
@@ -392,6 +394,7 @@ style="display:none;" onload="if(submitted)$('iframe').show();"><div><p>Worked</
 <label class="ss-q-item-label" for="entry_2015926311"><div class="ss-q-title">Additional Notes/Comments
 </div>
 <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+<br>
 <textarea name="entry.2015926311" rows="8" cols="0" class="ss-q-long" id="entry_2015926311" dir="auto" aria-label="Additional Notes/Comments  "></textarea>
 <div class="error-message" id="2134388858_errorMessage"></div>
 </div></div></div>
@@ -637,6 +640,8 @@ $('#rsvp').click(function(){
    var guests = $('#rsvp-result').data("guests");
    
    $('#entry_99844241').val(family_name);
+   $('#entry_1498135098').attr('max',guests);
+    $('#guest_title').html('How many people will attend? (Max: '+guests+') ') 
    
    
 });
