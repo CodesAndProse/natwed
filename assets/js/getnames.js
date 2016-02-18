@@ -54,7 +54,9 @@ $(document).ready(function(){
 					console.log("LABEL"+label + "VAL"+value);
 				   
 				  this.value = label;
-				  $('#rsvp-result').html("<p><h3>"+label+"</h3> Max Number of attendees is: "+value+"</p>")
+				  $('#rsvp-result').html("<p><h3>"+label+"</h3> Max Number of attendees is: "+value+"</p>");
+				  $('#rsvp-result').data("family", label);
+				  $('#rsvp-result').data("guests", value);
 				  return false;
 				}
             });

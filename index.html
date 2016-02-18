@@ -158,7 +158,7 @@
             </div><!--//row-->
             
             <div class="action-wrapper">
-                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Now</a>
+                <a class="btn btn-primary" id="rsvp" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Now</a>
             </div><!--//action-wrapper-->
             <br/>
         </div><!--//container-->
@@ -328,9 +328,92 @@ share our day. However if you do wish to buy us a gift you can check out the reg
             </div>
         </div>
     </div><!--blueimp-gallery-->
-    
-    <!-- RSVP Modal -->
+	
+	 <!-- RSVP Modal -->
     <div id="rsvp-modal" class="modal modal-rsvp"  tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 id="rsvpModalLabel" class="modal-title text-center">
+                        <span class="title script display-block"><span class="title-deco-left"></span><span class="title-text">RSVP</span><span class="title-deco-right"></span></span>
+                        <span class="subtitle display-block">Come and celebrate with us! <br> Please RSVP by May 16, 2016</span>
+                    </h2>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                  <script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)$('iframe').show();"><div><p>Worked</p></div></iframe>  
+<form action="https://docs.google.com/forms/d/1FPJpubLTZGp5p4hOzM-eBeoOX4ned3KdQloPhusnrbI/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true; $('form').hide();">
+
+<ul role="list" class="ss-question-list" style="padding-left: 0">
+<input type="hidden" name="entry.99844241" value="" class="ss-q-short valid" id="entry_99844241" dir="auto" aria-label="Invite Name  " title="">
+
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1275419724"><div class="ss-q-title">Will you be attending?
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Will you attend?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.877086558" value="Yes" id="group_877086558_1" role="radio" class="ss-q-radio" aria-label="Yes"></span>
+<span class="ss-choice-label">Yes</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.877086558" value="No" id="group_877086558_2" role="radio" class="ss-q-radio" aria-label="No"></span>
+<span class="ss-choice-label">No</span>
+</label></li></ul>
+<div class="error-message" id="1275419724_errorMessage"></div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1498135098"><div class="ss-q-title">How many people will attend?
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+<input type="number" name="entry.1498135098" value="" class="ss-q-short" id="entry_1498135098" dir="auto" aria-label="How many people will attend?  " title="">
+<div class="error-message" id="905896922_errorMessage"></div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+
+<div dir="auto" class="ss-item  ss-grid"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_635533331"><div class="ss-q-title">Please select food and beverage preference for each guest
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+<div>
+<table id="grid" border="0" cellpadding="5" cellspacing="0"><thead><tr><td class="ss-gridnumbers ss-gridrow-leftlabel">Name</td>
+<td class="ss-gridnumbers" style="width: 33%;"><label class="ss-gridnumber">Meat/Chicken</label></td> <td class="ss-gridnumbers" style="width: 33%;"><label class="ss-gridnumber">Vege</label></td></tr></thead>
+<tbody><tr role="radiogroup" aria-label="Guest 1" aria-describedby="635533331_errorMessage" class="ss-gridrow ss-grid-row-odd"><td class="ss-gridrow ss-gridrow-leftlabel"><input type="text" name="entry.761903990" value="" class="ss-q-short" id="entry_761903990" dir="auto" aria-label="1st Attendee  " title=""></td>
+<td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.795292388" value="Meat/Chicken" id="group_795292388_1" role="radio" class="ss-q-radio" aria-label="Meat/Chicken"></div></label></td> <td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.795292388" value="Vege" id="group_795292388_2" role="radio" class="ss-q-radio" aria-label="Vege"></div></label></td></tr> <tr role="radiogroup" aria-label="Guest 2" aria-describedby="635533331_errorMessage" class="ss-gridrow ss-grid-row-even"><td class="ss-gridrow ss-gridrow-leftlabel"><input type="text" name="entry.1933058691" value="" class="ss-q-short" id="entry_1933058691" dir="auto" aria-label="2nd Attendee  " title=""></td>
+<td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1729415396" value="Meat/Chicken" id="group_1729415396_1" role="radio" class="ss-q-radio" aria-label="Meat/Chicken"></div></label></td> <td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1729415396" value="Vege" id="group_1729415396_2" role="radio" class="ss-q-radio" aria-label="Vege"></div></label></td></tr> <tr role="radiogroup" aria-label="Guest 3" aria-describedby="635533331_errorMessage" class="ss-gridrow ss-grid-row-odd"><td class="ss-gridrow ss-gridrow-leftlabel"><input type="text" name="entry.273111269" value="" class="ss-q-short" id="entry_273111269" dir="auto" aria-label="3rd Attendee  " title=""></td>
+<td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1000821325" value="Meat/Chicken" id="group_1000821325_1" role="radio" class="ss-q-radio" aria-label="Meat/Chicken"></div></label></td> <td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1000821325" value="Vege" id="group_1000821325_2" role="radio" class="ss-q-radio" aria-label="Vege"></div></label></td></tr> <tr role="radiogroup" aria-label="Guest 4" aria-describedby="635533331_errorMessage" class="ss-gridrow ss-grid-row-even"><td class="ss-gridrow ss-gridrow-leftlabel"><input type="text" name="entry.1845158370" value="" class="ss-q-short" id="entry_1845158370" dir="auto" aria-label="4th Attendee  " title=""></td>
+<td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1404509043" value="Meat/Chicken" id="group_1404509043_1" role="radio" class="ss-q-radio" aria-label="Meat/Chicken"></div></label></td> <td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1404509043" value="Vege" id="group_1404509043_2" role="radio" class="ss-q-radio" aria-label="Vege"></div></label></td></tr> <tr role="radiogroup" aria-label="Guest 5" aria-describedby="635533331_errorMessage" class="ss-gridrow ss-grid-row-odd"><td class="ss-gridrow ss-gridrow-leftlabel"><input type="text" name="entry.285432534" value="" class="ss-q-short" id="entry_285432534" dir="auto" aria-label="5th Attendee  " title=""></td>
+<td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.708682570" value="Meat/Chicken" id="group_708682570_1" role="radio" class="ss-q-radio" aria-label="Meat/Chicken"></div></label></td> <td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.708682570" value="Vege" id="group_708682570_2" role="radio" class="ss-q-radio" aria-label="Vege"></div></label></td></tr> <tr role="radiogroup" aria-label="Guest 6" aria-describedby="635533331_errorMessage" class="ss-gridrow ss-grid-row-even"><td class="ss-gridrow ss-gridrow-leftlabel"><input type="text" name="entry.1460246986" value="" class="ss-q-short" id="entry_1460246986" dir="auto" aria-label="6th Attendee  " title=""></td>
+<td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1363176433" value="Meat/Chicken" id="group_1363176433_1" role="radio" class="ss-q-radio" aria-label="Meat/Chicken"></div></label></td> <td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1363176433" value="Vege" id="group_1363176433_2" role="radio" class="ss-q-radio" aria-label="Vege"></div></label></td></tr> <tr role="radiogroup" aria-label="Guest 7" aria-describedby="635533331_errorMessage" class="ss-gridrow ss-grid-row-odd"><td class="ss-gridrow ss-gridrow-leftlabel"><input type="text" name="entry.884171013" value="" class="ss-q-short" id="entry_884171013" dir="auto" aria-label="7th Attendee  " title=""></td>
+<td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.649757032" value="Meat/Chicken" id="group_649757032_1" role="radio" class="ss-q-radio" aria-label="Meat/Chicken"></div></label></td> <td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.649757032" value="Vege" id="group_649757032_2" role="radio" class="ss-q-radio" aria-label="Vege"></div></label></td></tr> <tr role="radiogroup" aria-label="Guest 8" aria-describedby="635533331_errorMessage" class="ss-gridrow ss-grid-row-even"><td class="ss-gridrow ss-gridrow-leftlabel"><input type="text" name="entry.608515112" value="" class="ss-q-short" id="entry_608515112" dir="auto" aria-label="8th Attendee  " title=""></td>
+<td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1669013619" value="Meat/Chicken" id="group_1669013619_1" role="radio" class="ss-q-radio" aria-label="Meat/Chicken"></div></label></td> <td class="ss-gridrow" style="width: 33%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1669013619" value="Vege" id="group_1669013619_2" role="radio" class="ss-q-radio" aria-label="Vege"></div></label></td></tr></tbody></table>
+<div class="error-message" id="635533331_errorMessage"></div></div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-paragraph-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2015926311"><div class="ss-q-title">Additional Notes/Comments
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+<textarea name="entry.2015926311" rows="8" cols="0" class="ss-q-long" id="entry_2015926311" dir="auto" aria-label="Additional Notes/Comments  "></textarea>
+<div class="error-message" id="2134388858_errorMessage"></div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-1704995748834097100&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+<input type="hidden" name="fvv" value="0">
+
+
+<input type="hidden" name="fbzx" value="-1704995748834097100">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action "></td>
+</tr></tbody></table></div></ol></form>
+                </div><!--//modal-body-->
+            </div><!--//modal-content-->
+        </div><!--//modal-dialog-->
+    </div><!--//modal-->
+    
+    <!-- RSVP-BACKUP Modal -->
+    <div id="rsvp-modal-bak" class="modal modal-rsvp"  tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -538,6 +621,26 @@ share our day. However if you do wish to buy us a gift you can check out the reg
      
 	<script type="text/javascript" src="assets/js/getnames.js">
 	</script>
+	
+	<script type="text/javascript" src="./Event RSVP_files/4252569003-formviewer_prd.js"></script>
+<script>
+$('#entry_1498135098').change(function(){
+   var guests = $(this).val();
+   $("#grid").find("tr.ss-gridrow").hide();
+   $("#grid").find("tr.ss-gridrow").slice(0, guests).show();
+
+});
+
+$('#rsvp').click(function(){
+   
+   var family_name = $('#rsvp-result').data("family");
+   var guests = $('#rsvp-result').data("guests");
+   
+   $('#entry_99844241').val(family_name);
+   
+   
+});
+</script>
     
     
     
